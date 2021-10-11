@@ -9,5 +9,5 @@
     <li>From the product table get the product name and product line of every product and show the results by product line eg:
 Classic Cars -> Motorcycles -> Planes -> Ships -> Trucks and Buses -> Vintage Cars</li>
     <li>From the customers table get how many customers we have by the country they live in and show them results alongside each other from most to fewest</li>
-    <li>Get the name of every customer that purcahsed a product from "Classic Metal Creations" in the year 2004 that had a unit price greater than £125. The list should contain no duplicates</li>
+    <li>Get the name of every customer that purchased a product from "Classic Metal Creations" in the year 2004 that had a unit price greater than £125. The list should contain no duplicates</li>
 </ol>

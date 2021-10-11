@@ -77,7 +77,7 @@ ORDER BY "CustomersPerCountry"
 ```
 
 ## Exercise 8
-Get the name of every customer that purcahsed a product from "Classic Metal Creations" in the year 2004 that had a unit price greater than £125. The list should contain no duplicates
+Get the name of every customer that purchased a product from "Classic Metal Creations" in the year 2004 that had a unit price greater than £125. The list should contain no duplicates
 
 ```
 SELECT
