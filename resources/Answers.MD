@@ -75,3 +75,19 @@ FROM "PUBLIC".customers
 GROUP BY "countryCode"
 ORDER BY "CustomersPerCountry"
 ```
+
+## Exercise 8
+Get the name of every customer that purcahsed a product from "Classic Metal Creations" in the year 2004 that had a unit price greater than £125. The list should contain no duplicates
+
+```
+SELECT
+	DISTINCT(c."customerName")
+FROM
+	"PUBLIC".customers c
+INNER JOIN "PUBLIC".orders o ON c."customerNumber" = o."customerNumber"
+INNER JOIN "PUBLIC"."orderDetails" od ON o."orderNumber" = od."orderNumber"
+INNER JOIN "PUBLIC".products p ON od."productCode" = p."productCode"
+WHERE p."productVendor" = 'Classic Metal Creations'
+AND od."priceEach" > 125
+AND o."shippedDate" BETWEEN '01/01/2004' AND '12/31/2004'
+```
